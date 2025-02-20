@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css">
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>js ecom website</title>
+  <title>Shopi Store</title>
 </head>
 <body>
   <header class="section-navbar">
@@ -87,6 +87,7 @@
     </section>
    </main>
 
+   <!-- start extra product section -->
    
    <section class="section-extra-product">
     <div class="container grid grid-three--cols">
@@ -122,7 +123,10 @@
         </div>
     </div>
   </section>
+  <!-- End extra product section -->
 
+
+    <!-- start policy -->
   <section class="section-policy">
     <div class="container grid grid-four--cols">
       <div class="div-policy">
@@ -169,7 +173,161 @@
 
     </div>
   </section>
+<!-- end policy -->
 
+<!-- Start our products section  -->
+
+<section class="section-products">
+  <div class="container">
+    <div class="section-common-heading">
+      Checkout Shopi Store </div>
+  </div>
+
+  <section class="container">
+    <div id="productContainer"></div>
+
+  </section>
+</section>
+
+<!-- Start product Template Section -->
+
+<template id="productTemplate ">
+  <div class="cards" id="cardValue">
+    <article class="information [card]">
+      <span class="category"></span>
+      <div class="imagecontainer">
+        <img class="productImage" src="" alt="">
+      </div>
+      <h2 class="productName"></h2>
+      <div class="productRating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <p class="productDescription"></p>
+        
+      <div class="productPriceElement">
+        <p class="productPrice"></p>
+        <p class="productActualPrice"></p>
+      </div>
+
+      <div class="productStockElement">
+        <p class="productProperty">Total Stocks Available:</p>
+        <p class="productStock"></p>
+      </div>
+
+      <div class="productQuantityElement">
+        <p class="productProperty">Quantity(Pieces)</p>
+        <div class="StockElement">
+          <button class="cartIncrement">+</button>
+          <p class="productQuantity">1</p>
+          <button class="cartDecrement">-</button>
+        </div>
+      </div>
+
+      <button class="add-to-cart-button">
+        <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+      </button>
+
+    </article>
+  </div>
+</template>
+
+ <!-- End product Template Section -->
+
+ <!-- End our products section -->
+
+<!-- start why choose shopi store -->
+<section class="section-why--choose">
+  <div class="container">
+    <h2 class="section-common--heading">Why Choose Shopi Store</h2>
+    <p class="section-common--subheading">
+      Choose Shopi Edhub for a holistic, Enriching learning experience that 
+      empowers you to achieve your goals.
+    </p>
+  </div>
+
+  <div class="container grid grid-three--cols">
+    <div class="choose-left-div text-align--right">
+      <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="0">
+        <p class="common-text-highlight">1</p>
+        <h3 class="section-common--title">wide Selection</h3>
+        <p>Shopi Store offers a diverse range of gadgets, from smartphones to 
+          smart home devices. ensuring you find what you need to elevate
+          your lifestyle and meet you tech requirements.
+        </p>
+      </div>
+
+      <div
+      class="why-choose--div"
+      data-aos="zoom-in-up"
+      data-aos-delay="300">
+       <p class="common-text-highlight">2</p>
+       <h3 class="section-common--title">Quality Assurance</h3>
+       <p>Every gadget at Shopi Store undergoes rigorous quality checks,
+        guranteeing reliability and performance, so you can shop with 
+        confidence knowing you're getting the best.
+       </p>
+      </div>
+
+      <div class="why-choose--div"
+      data-aos="zoom-in-up"
+      data-aos-delay="600">
+      <p class="common-text-highlight">3</p>
+      <h3 class="section-common--title">Competitive Prices</h3>
+      <p>Enjoy great value with Shopi Store's competitive prices on 
+        high-quality gadgets, making top-of-the-line technology accesible 
+        to all without compromising on quality or performance.
+      </p>
+      </div>
+    </div>
+    <div class="choose-center-div" data-aos="zoom-in" data-aos-delay="300">
+      <figure>
+        <img src="./public/laptop idea.png" alt="">
+      </figure>
+    </div>
+     
+    <div class="why-choose--div text-align--left"
+    data-aos="zoom-in-up"
+    data-aos-delay="0">
+  <p class="common-text-highlight">4</p>
+  <h3 class="section-common--title">Expert Guidance</h3>
+  <p>Our knowledgeable staff provides expert guidance, helping you 
+    choose the right gadget to meet your needs and preferences, 
+    ensuring you make informed decision every step of the way.
+  </p>
+
+
+  <div class="why-choose--div text-align--left"
+  data-aos="zoom-in-up"
+  data-aos-delay="300">
+  <p class="common-text-highlight">5</p>
+  <h3 class="section-common--title">Convenient Shopping</h3>
+  <p>With Shopi Store Shopping for gadget is easy and convenient 
+    Our user-friendly website and secure payment options ensure
+    a seamless experience from browsing to chekout. all from the comfort of your home.
+  </p>
+</div>
+
+<div class="why-choose--div text-align--left"
+data-aos="zoom-in-up"
+data-aos-delay="600">
+<p class="common-text-highlight">6</p>
+<h3 class="section-common--title">Excellent Service</h3>
+<p>Shopi Store is committed to providing Excellent Service to our
+  customers. From prompt assistance with inquiries to efficient handling
+   of orders abnd deliveries, we prioritize your satisfaction every step of the way.
+</p>
+</div>
+</div>
+  </div>
+</section>
+<!-- End Why Choose Shopi Store -->
+
+  <script type="module" src="main.js"></script>
 
 </body>
 </html>

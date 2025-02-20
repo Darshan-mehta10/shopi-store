@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "name": "Laptop",
+        "category":"Computers",
+        "brand":"ExampleBrand",
+        "price": 999.99,
+        "stock":50,
+        "description": "Powerful lapto with a quad-core i5 processor, 8GB RAM, 256GB SSDl and a 14-inch FHD display.",
+        "image": "./public/lapi.png"
+    },
+    {
+        "id":2,
+        "name":"Smartphone",
+        "category":"mobiles",
+        "brand":"TechGadget",
+        "price": 499.99,
+        "stock": 100,
+        "image": "./public/iphone.png",
+        "description":"Feature-rich smartphone with a 6.2-inch Screen, 12MP dual camera, 128GB storage, and a 4000mAh battery." 
+    },
+    {
+        "id":3,
+        "name": "wireless Headphones",
+        "category": "Audio",
+        "brand": "soundBeats",
+        "price": 149.99,
+        "stock":30,
+        "images": "./public/headphones.webp",
+        "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek  black color."
+    },
+    {
+        "id":4,
+        "name":"Watches",
+        "category": "wearable",
+        "brand":"FitTech",
+        "price":199.99,
+        "stock":20,
+        "image": "./public/smartwatch.jpg",
+        "description":"Smartwatch with a 1.3-inch AMOLED display,water-resistant design, fitness tracking features, and a Stylish silver color."
+    },
+    {
+        "id":5,
+        "name":"speakers",
+        "category":"Audio",
+        "brand": "soundBeats",
+        "price": 149.99,
+        "stock":30,
+        "image":"./public/boat.jpeg",
+        "description":"High-quality wireless Speaker with over-ear design, 20 hours of battery life, and a sleek black color." 
+    },
+    {
+        "id":6,
+        "name":"Television",
+        "category": "video",
+        "brand":"samsung",
+        "price": 199.99,
+        "stock": 20,
+        "image": "./public/tv.jpeg",
+        "description":"Smartwatch with a 1.3-inch AMOLED display,water-resistant design, fitness tracking features, and a stylish silver color."
+    }
+]
